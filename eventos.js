@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const button = document.querySelector('button');
   
     button.addEventListener('click', function (event) {
-      event.stopPropagation(); // Detener la propagación del evento del botón
-      alert('Hola!'); // Alerta del botón
+      event.stopPropagation(); 
+      alert('Hola!'); 
     });
   
-    // Agregar un nuevo listener para el evento click en el div que no propague
-    const divWithoutPropagation = document.getElementById('divWithoutPropagation');
+   
+    const divsinpropagacion = document.getElementById('divsinpropagacion');
     
-    divWithoutPropagation.addEventListener('click', function (event) {
+    divsinpropagacion.addEventListener('click', function (event) {
       event.stopPropagation();
       alert('Hola! Soy el div sin propagación');
     });
